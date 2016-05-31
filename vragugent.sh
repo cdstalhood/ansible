@@ -5,5 +5,5 @@ yum -y install ansible git
 cd /tmp
 echo "localhost ansible_connection=local" >> /etc/ansible/hosts
 git clone https://github.com/stalhood/ansible.git
-cd ansible-examples/$Playbook/
+cd ansible/$Playbook/
 ansible-playbook -i hosts site.yml
