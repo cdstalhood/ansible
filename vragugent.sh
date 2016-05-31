@@ -6,4 +6,4 @@ cd /tmp
 echo "localhost ansible_connection=local" >> /etc/ansible/hosts
 git clone https://github.com/stalhood/ansible.git
 cd ansible-examples/$Playbook/
-ansible-playbook site.yml
+ansible-playbook -i hosts site.yml
