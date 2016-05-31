@@ -4,6 +4,6 @@ yum -y install epel-release
 yum -y install ansible git
 cd /tmp
 echo "localhost ansible_connection=local" >> /etc/ansible/hosts
-git clone https://github.com/stalhood/ansible-examples.git
+git clone https://github.com/stalhood/ansible.git
 cd ansible-examples/$Playbook/
 ansible-playbook site.yml
